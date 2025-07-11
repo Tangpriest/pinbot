@@ -10,4 +10,4 @@ def generate_voice(text, filename):
     tts.save(filename)
 
 # 示例用法：
-generate_voice("特朗普的生日是？", "tongxue.mp3")
+generate_voice("嘿哟，我是你的小周同学", "wakup.mp3")
