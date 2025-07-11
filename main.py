@@ -8,9 +8,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# .env
-# ALI_TTS_APPKEY=FsUpfzZ1z4S5YPP6
-# ALI_TTS_TOKEN=3fa83c9e482a4bc08c83990a1280fe4e
 
 TOKEN = os.getenv("ALI_TTS_TOKEN")
 APPKEY = os.getenv("ALI_TTS_APPKEY")
