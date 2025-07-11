@@ -86,3 +86,7 @@ cython_debug/
 
 # System files
 Thumbs.db
+
+.env
+*.wav
+*.mp3

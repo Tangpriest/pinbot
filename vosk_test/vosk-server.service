@@ -1,0 +1,14 @@
+[Unit]
+Description=Vosk WebSocket ASR Service
+After=network.target
+
+[Service]
+Type=simple
+User=leon
+WorkingDirectory=/home/leon/vosk-server/websocket
+ExecStart=/home/leon/vosk-server/venv/bin/python3 asr_server.py /home/leon/vosk-server/model/vosk-model-cn-0.22
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

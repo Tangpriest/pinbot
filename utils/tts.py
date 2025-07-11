@@ -5,12 +5,6 @@ import nls
 import time
 import pyaudio
 
-def speak(text, lang='zh'):
-    tts = gTTS(text=text, lang=lang)
-    print(f"🔊 正在生成语音: {text}")
-    tts.save("reply.mp3")
-    playsound.playsound("reply.mp3")
-    os.remove("reply.mp3")
 
 def stream_tts_play(text_stream, token, appkey, voice="xiaoyun", sample_rate=24000):
     """
@@ -53,8 +47,8 @@ def stream_tts_play(text_stream, token, appkey, voice="xiaoyun", sample_rate=240
         voice=voice,
         aformat="wav",
         sample_rate=sample_rate,
-        volume=50,
-        speech_rate=0,
+        volume=100,
+        speech_rate=10,
         pitch_rate=0,
     )
 
